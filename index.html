@@ -1,0 +1,234 @@
+
+<!DOCTYPE html><html lang="ko"><head>
+  <meta charSet="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
+  <meta property="og:title" content="아반떼 보험료 계산 및 비교 – 최적 견적 조회"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="/"/>
+  <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
+  <meta name="description" content="아반떼 보험료 계산기 & 비교 – 운전 경력, 연령, 지역, 보험사 특약 등을 반영해 보험료 예측하고 절약 팁까지 안내합니다.">
+  
+  <meta itemprop="description" content="아반떼 보험료 계산 및 비교 – 최적 견적 조회" />
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="아반떼 보험료 계산 및 비교 – 최적 견적 조회"/>
+  <meta name="twitter:url" content="/"/>
+  <meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
+  <meta name="twitter:description" content="아반떼 보험료 계산 및 비교 – 최적 견적 조회"/>
+  
+  <meta name="robots" content="index,nofollow" />
+  <meta name="NaverBot" content="index,nofollow" />
+  <meta name="Yeti" content="index,nofollow" />
+  <meta name="googlebot" content="index,nofollow" />
+  
+  <meta name="subject" content="아반떼 보험료 계산 및 비교 – 최적 견적 조회" />
+  <meta name="publisher" content="아반떼 보험료 계산 및 비교 – 최적 견적 조회" />
+  <meta name="Other Agent" content="아반떼 보험료 계산 및 비교 – 최적 견적 조회" />
+  <meta name="location" content="South Korea" />
+  <meta name="distribution" content="global" />
+  <meta name="rating" content="general" />
+  <meta itemprop="name" content="" />
+  
+    <link rel="stylesheet" href="./Img/reset.css">
+    <link rel="stylesheet" href="./Img/main.css">
+    <link rel="stylesheet" href="./common/swiper.css" />
+    <script src="./jquery.min.js"></script>
+    <script src="./jquery.serializeObject.min.js"></script>
+    <script src="./json3.min.js"></script>
+    <script src="./bxslider.js" type="text/javascript"></script>
+    <script src="./common/moment.min.js"></script>
+  
+  
+  <title>아반떼 보험료 계산 및 비교 – 최적 견적 조회</title>
+  
+  <meta name="next-head-count" content="25"/>
+  <meta name="format-detection" content="telephone=no"/>
+  
+  
+  
+  
+  
+ <style>
+      body { font-family: 'Noto Sans KR', sans-serif; line-height:1.6; margin:0; padding:0; background:#f9fafb; color:#333; }
+      .container { max-width:800px; margin:0 auto; padding:20px; background:white; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+      h1 { color:#2c3e50; font-size:2.2em; margin-bottom:0.5em; }
+      h2, h3 { color:#34495e; margin-top:1.5em; }
+      .highlight { color:#e74c3c; font-weight:bold; }
+      .input-group { margin-bottom:1em; }
+      label { display:block; margin-bottom:0.5em; font-weight:600; }
+      input, select { width:100%; padding:0.6em; border:1px solid #ccc; border-radius:4px; }
+      button { padding:0.8em 1.2em; background:#3498db; color:white; border:none; border-radius:4px; cursor:pointer; }
+      button:hover { background:#2980b9; }
+      table { width:100%; border-collapse:collapse; margin-top:1em; }
+      table th, table td { border:1px solid #ddd; padding:0.8em; text-align:left; }
+      .faq { margin-top:2em; }
+      .faq-item { margin-bottom:1em; }
+      .external-link { color:#2980b9; text-decoration:underline; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>아반떼 보험료 예상 & 비교 계산기</h1>
+      <p>아반떼 보험료가 어떻게 정해지는지 <span class="highlight">나이, 운전경력, 차종 등</span>의 다양한 요소를 입력하면 예측 금액을 즉시 확인하실 수 있습니다. 여러 보험사의 특약도 비교하고 절약 팁까지 한눈에!</p>
+      
+      <!-- 보험료 계산기 입력폼 -->
+      <form id="insuranceCalc">
+        <div class="input-group">
+          <label for="model">모델 선택</label>
+          <select id="model" name="model">
+            <option value="아반떼 AD">아반떼 AD</option>
+            <option value="아반떼 CN7">아반떼 CN7</option>
+            <option value="아반떼 LPi">아반떼 LPi</option>
+            <option value="아반떼 하이브리드">아반떼 하이브리드</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="age">운전자 나이</label>
+          <input type="number" id="age" name="age" min="18" max="80" value="30">
+        </div>
+        <div class="input-group">
+          <label for="experience">운전 경력 (면허취득 후 년수)</label>
+          <input type="number" id="experience" name="experience" min="0" max="60" value="5">
+        </div>
+        <div class="input-group">
+          <label for="region">등록 지역</label>
+          <select id="region" name="region">
+            <option value="서울">서울</option>
+            <option value="경기">경기</option>
+            <option value="부산">부산</option>
+            <option value="광주">광주</option>
+            <option value="기타">기타</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="coverage">보장 범위 / 특약 (자차 포함 여부 등)</label>
+          <select id="coverage" name="coverage">
+            <option value="기본">기본 보험 (대인, 대물만)</option>
+            <option value="자차 포함">자차 포함</option>
+            <option value="풀 커버">대인, 대물, 자차 + 특별 특약 포함</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="accidents">사고 이력 (최근 3년 내)</label>
+          <select id="accidents" name="accidents">
+            <option value="0">없음</option>
+            <option value="1">1건</option>
+            <option value="2 이상">2건 이상</option>
+          </select>
+        </div>
+        <button type="button" onclick="calculate()">보험료 예측하기</button>
+      </form>
+      
+      <div id="result" style="margin-top:1.5em; padding:1em; background:#ecf0f1; border-radius:4px; display:none;">
+        <h2>예상 보험료</h2>
+        <p>입력하신 조건에 따른 예상 보험료는 아래와 같습니다:</p>
+        <table>
+          <thead>
+            <tr><th>조건</th><th>예상 보험료 (연간)</th></tr>
+          </thead>
+          <tbody id="resultTable">
+            <!-- JS로 채워짐 -->
+          </tbody>
+        </table>
+        <p><small>※ 실제 보험료는 보험사, 특약, 할인률 등에 따라 달라질 수 있으며 참고용입니다.</small></p>
+      </div>
+      
+      <!-- 보험료 절약 팁 & 관련 정보 -->
+      <h2>아반떼 보험료 절약 팁 & 주요 영향 요소</h2>
+      <ul>
+        <li>운전경력이 많을수록 보험료 할인이 커집니다.</li>
+        <li>연령이 낮거나 면허 취득 후 경력이 짧으면 보험료 할증이 높아집니다.</li>
+        <li>차량 모델, 연식, 가액이 높을수록 보험료가 올라갑니다.</li>
+        <li>특약(무사고 할인, 블랙박스, 자차 특약 등)을 적극 활용하세요.</li>
+        <li>사고 이력 및 할증 사유 유무 확인이 중요합니다.</li>
+        <li>보험사별 비교견적을 통해 우대 조건이 있는 곳을 찾기.</li>
+      </ul>
+      
+      <!-- FAQ 및 Q&A 섹션 -->
+      <div class="faq">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <div class="faq-item">
+          <h3>Q: 고등학생이 아반떼 타면 보험료는 얼마나 되나요?</h3>
+          <p>A: 나이, 면허 취득 경력, 자차 포함 여부 등에 따라 다르지만, <strong>자차 포함</strong> + 면허 경력 짧음 + 사고 이력 없는 조건에서는 연간 약 <span class="highlight">100~150만원 이상</span>이 될 수 있습니다. (예: 아반떼 AD 기준) <em>※ 실제 견적은 보험사와 특약 조건에 따라 차이 있음</em>.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q: 아반떼 AD와 CN7 중 보험료 차이가 큰가요?</h3>
+          <p>A: 예. 모델 변경에 따라 차량 가치, 부품비용, 모델 등급에 따라 보험료가 변화합니다. 일반적으로 최신 모델(CN7)이 AD 대비 보험료가 약간 더 높게 나올 가능성이 큽니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Q: 사고 이력이 있으면 보험료 얼마나 할증되나요?</h3>
+          <p>A: 사고 건수 및 과실비율, 배상액의 크기에 따라 할증 기준이 달라지며, <a href="https://www.fss.or.kr" class="external-link" target="_blank">금융감독원</a>의 사고점수 체계를 참고하면 구체적인 할증 조건을 알 수 있습니다.</p>
+        </div>
+      </div>
+      
+      <!-- 관련 키워드 & 링크 확장 -->
+      <h2>관련 키워드 및 추가 정보</h2>
+      <p>아래 키워드들도 함께 알아보시면 보험료 이해에 도움이 됩니다:</p>
+      <ul>
+        <li>아반떼 보험료 비교견적</li>
+        <li>아반떼 AD vs CN7 보험료 차이</li>
+        <li>자동차보험 특약 종류</li>
+        <li>무사고 할인, 블랙박스 특약</li>
+        <li>보험료 절감 방법</li>
+      </ul>
+      
+      <!-- 외부 신뢰자료 요약 및 인용 -->
+      <h2>공신력 참고자료</h2>
+      <ul>
+        <li><a href="https://www.fss.or.kr" class="external-link" target="_blank">금융감독원 – 자동차보험 할증 기준 및 정책</a></li>
+        <li><a href="https://www.kidi.or.kr" class="external-link" target="_blank">보험개발원 – 자동차보험 등급 및 통계</a></li>
+        <li><a href="https://www.motie.go.kr" class="external-link" target="_blank">국토교통부 – 자동차 등록원가, 차종 정보</a></li>
+        <li><a href="https://www.kca.go.kr" class="external-link" target="_blank">한국소비자원 – 자동차보험 소비자 정보</a></li>
+        <li><a href="https://namu.wiki/w/%EC%95%84%EB%B0%98%EB%96%BC" class="external-link" target="_blank">나무위키 – 아반떼 모델별 정보</a></li>
+        <li><a href="https://news.sbs.co.kr" class="external-link" target="_blank">SBS Biz – 아반떼 보험료 절감 사례</a></li>
+      </ul>
+    </div>
+  
+    <script>
+      function calculate() {
+        const model = document.getElementById('model').value;
+        const age = parseInt(document.getElementById('age').value,10);
+        const exp = parseInt(document.getElementById('experience').value,10);
+        const coverage = document.getElementById('coverage').value;
+        const accidents = document.getElementById('accidents').value;
+        
+        // 기본 보험료 산정 로직 (예시 계산 공식, 실제 보험사와 다를 수 있음)
+        let base = 400000; // 기본 요금 (예: 대인+대물)
+        // 모델 영향
+        if(model.includes('CN7')) base += 50000;
+        if(model.includes('하이브리드')) base += 80000;
+        // 나이 영향
+        if(age <25) base *= 1.5;
+        else if(age <30) base *= 1.2;
+        // 운전경력 영향
+        if(exp <2) base *= 1.4;
+        else if(exp <5) base *= 1.2;
+        // 자차 포함 / 풀커버 여부
+        if(coverage === '자차 포함') base += 150000;
+        else if(coverage === '풀 커버') base += 250000;
+        // 사고 이력
+        if(accidents === '1') base *= 1.2;
+        else if(accidents === '2 이상') base *= 1.5;
+        
+        // 지역 특성 보정 (예시)
+        const region = document.getElementById('region').value;
+        if(region === '서울') base *= 1.1;
+        else if(region === '경기') base *= 1.05;
+  
+        // 결과 표 생성
+        const resultTable = document.getElementById('resultTable');
+        resultTable.innerHTML = '';
+        const tr = document.createElement('tr');
+        const tdCond = document.createElement('td');
+        tdCond.textContent = `${model} / 나이 ${age}세 / 경력 ${exp}년 / ${coverage} / 사고 ${accidents}건`;
+        const tdPrice = document.createElement('td');
+        tdPrice.textContent = base.toLocaleString() + '원';
+        tr.appendChild(tdCond);
+        tr.appendChild(tdPrice);
+        resultTable.appendChild(tr);
+  
+        document.getElementById('result').style.display = 'block';
+      }
+    </script>
+  </body>
+  </html>
+    
